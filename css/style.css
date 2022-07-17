@@ -67,8 +67,8 @@ body {
     padding: 0;
     margin-right: 0;
     padding-top: 10px;
-    width: 50%;
-    height: 50%;
+    /* width: 50%;
+    height: 50%; */
   }
   .container-wrapper {
     margin: 5% 5%;
@@ -140,7 +140,7 @@ body {
 .proceed-payment {
   box-sizing: border-box;
   background-color: hsl(245, 75%, 52%);
-  margin: 0 20px 10px 20px;
+  margin: 0 5% 10px 5%;
   width: 90%;
   height: 40px;
   line-height: 40px;
@@ -157,7 +157,7 @@ body {
 
 .cancel-order {
   box-sizing: border-box;
-  margin: 5px 20px;
+  margin: 0 5% 10px 5%;
   width: 90%;
   height: 40px;
   line-height: 40px;
