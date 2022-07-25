@@ -1,0 +1,125 @@
+/* Variable Colors */
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+/* Resetting margins and paddings to 0 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+/* Screen Size: 1440px */
+/* body */
+body {
+  box-sizing: border-box;
+  background-color: var(--PaleBlue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* end of body */
+/* Container Wrapper */
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--VeryPaleBlue);
+  margin: 10% 38%;
+  border-radius: 20px;
+}
+/* Music Image */
+.dancingImage {
+  width: 100%;
+}
+.dancingImage img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+/* Order Summary */
+.orderSummary {
+  text-align: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(215, 231, 250, 0.274);
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  
+}
+.audio-icon img {
+  padding: 5px;
+}
+.change a {
+  padding-left: 4em;
+  color: var(--BrightBlue);
+  font-weight: bold;
+}
+.annual-planPrice p {
+  font-size: 16px;
+  padding-left: 1em;
+}
+.annual-planPrice :nth-child(2) {
+  color: var(--DesaturatedBlue);
+}
+/* End of Content Wrapper */
+
+/* Proceed Payment */
+.proceed-payment {
+  background-color: var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  width: 90%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px 0.2px   var(--BrightBlue);
+}
+.proceed-payment a {
+  color: var(--VeryPaleBlue);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Cancel Order */
+.cancelOrder {
+  background-color: var(--VeryPaleBlue);
+  color: var();
+  text-align: center;
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.cancelOrder a {
+  color: var(--DesaturatedBlue);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* footer */
+.attribution {
+  font-size: 10px;
+}
+
+/* Mobile view (375px) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: contain;
+  }
+  .card-wrapper {
+    margin: 20% 5%;
+  }
+}
